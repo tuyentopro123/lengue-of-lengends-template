@@ -1,0 +1,131 @@
+@use "../../../../scss/" as *;
+
+.gem {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    color:$txt-color;
+    @include tablet() {
+        background-position: 90%,0;
+    }
+    @include mobile() {
+        background-position: 70%,0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(55%, transparent)), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(60%, transparent));
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent 50%), linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent 60%);
+        z-index: 0;
+        @include tablet() {
+            background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(55%, transparent)), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(60%, transparent));
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 50%), linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent 60%);
+        }
+
+        @include mobile {
+            background-color: #000000c9;
+            background-image:none;
+        }
+    }
+
+    
+    
+    &__container {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    &__desc {
+        @include flex(baseline,space-around);
+        flex-direction:column;
+        width:45%;
+        height:85%;
+        margin-left: 45px;
+        margin-top: 20px;
+        @include mobile() {
+            margin-left: 0;
+            height: 95% !important;;
+        }
+        @include tablet() {
+            width:95%;
+            height:100%;
+            justify-content:space-between!important;
+            -webkit-justify-content:space-between!important;
+        }
+        &__super {
+            min-height: 20%;
+            width:100%;
+            @include flex(baseline,space-around);
+        }
+        &__child {
+            @include flex(center,space-around);
+            flex-direction:column;
+            width: 33.33333%;
+            margin: 0 12px;
+            @include mobile() {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        &__title {
+            @include mobile() {
+                text-align: center;
+            }
+            & > img {
+                border-radius: 50%;
+                transform:scale(0.7);
+                height: 100%;
+                display: none!important;
+                @include mobile() {
+                    display: block!important;
+                }
+            }
+            & > * {
+                margin: 14px 0;
+                max-width: 400px;
+                max-height: 400px;
+                display: block;
+            }
+
+            h1{
+                font-size:3rem;
+                
+            }
+        }
+    }
+}
+
+.slick {
+    &-list {
+        height: 100%;
+    }
+
+    &-slide {
+        position: relative;
+    }
+
+    &-track {
+        height: 100%;
+    }
+}
+
+.description {
+    @include mobile() {
+        display: none;
+    }
+    p {
+        font-size:1.5rem;
+    }
+
+    h3 {
+        background-color:transparent !important;
+    }
+}

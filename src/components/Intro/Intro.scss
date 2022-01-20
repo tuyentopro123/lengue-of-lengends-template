@@ -1,0 +1,163 @@
+@use '../../scss/' as *;
+
+.intro {
+    background-color: #000;    
+    height: 56vh;
+    min-height: 653px;
+    margin-top: 90px;
+    @include tablet() {
+        min-height: 585px;
+        height: 40vh;        
+    }
+    &__video {
+        // position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        opacity: 0;
+        left: 0!important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        -webkit-transition: opacity 3.3s ease-in-out, visibility 0s ease-in-out 3s;
+        transition: opacity 3.3s ease-in-out, visibility 0s ease-in-out 3s;
+        z-index: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        video {
+            height: auto;
+            width: 100%;
+            mask-image: linear-gradient(to right, transparent 100%, rgba(0, 0, 0, 0.8) 15%), linear-gradient(to left, rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0, 0.8) 6%);
+        }
+    }
+
+    &__item.is-selected {
+        opacity: 1;
+        // z-index: 1;
+    }
+
+    &__wrap {
+        height: 100%;
+        width: 100%;
+        position: absolute!important;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(50%, transparent)), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(60%, transparent));
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent 50%), linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent 60%);
+            z-index: 10;
+        }
+
+        & > .flickity-viewport {
+            height: 100%!important;
+            & > .flickity-slider {
+                -webkit-transform: none !important;
+                transform: none !important;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    right: 0;
+                    left: 0;
+                    background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(8%, transparent), color-stop(92%, transparent), to(black));
+                    background-image: linear-gradient(to right, black, transparent 8%, transparent 92%, black);
+                    z-index: 10;
+                }
+            }
+        }
+        
+
+    }
+
+    &__content {
+        width:90%;
+        z-index: 30;
+        height:100%;
+        max-width: 1280px;
+        padding: 80px 20px;
+        margin: 0 auto;
+    }
+    
+    &__description {
+        position:absolute;
+        font-weight: bold;
+        width: 100%;
+        display: inline-block;
+        z-index: 20;
+        h1 {
+            color: $title-text;
+            font-size: 9rem;
+            line-height: 90px;
+            font-family: titleFont;
+            @include mobile() {
+                font-size: 6rem;
+                line-height: 60px;
+            }
+            span {
+                font-family:ofText ;
+            }
+        }
+        p {
+            margin: 50px 0;
+            color: $txt-color;
+            width:50%;
+            @include mobile() {
+                width: 80%;
+            }
+        }
+
+        Button {
+            font-size:2rem;
+        }
+    }
+
+}
+
+        
+.wing {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 98;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(20%, #565a5a), color-stop(50%, #565a5a), color-stop(80%, #565a5a), to(transparent));
+        background-image: linear-gradient(to left, transparent 0%, #565a5a 20%, #565a5a 50%, #565a5a 80%, transparent 100%);
+        background-color: transparent;
+        @include mobile() {
+            background-color: #565a5a;
+        }
+
+        @include tablet() {
+            background-color: #565a5a;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 9px;
+        height: 9px;
+        left: 50%;
+        border: 1px solid #565a5a;
+        background-color: #13171a;
+        -webkit-transform: rotate(45deg) translateX(-50%);
+        transform: rotate(45deg) translateX(-50%);
+    }
+}

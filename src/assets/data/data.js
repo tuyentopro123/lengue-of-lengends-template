@@ -1,0 +1,398 @@
+import {
+    thresh,
+    ekko,
+    masterYi,
+    yasuo,
+    lux,
+    katarina,
+    zed,
+    leesin,
+    yone,
+    garen,
+    fiora,
+    sona,
+    satthu,
+    xathu,
+    dodon,
+    dausi,
+    phapsu,
+    hotro,
+    bg1,
+    bg2,
+    bg3,
+    bg4,
+    bg5,
+    bg6,
+    bg7,
+    iconD,
+    socDien,
+    thuSanMoi,
+    thuThapHacAm,
+    iconP,
+    buocChanThanToc,
+    nhipDoChetNguoi,
+    sanSangTanCong,
+    iconR,
+    duChan,
+    hoVe,
+    quyenNangBatDiet,
+    iconS,
+    tangTocPha,
+    thienThachBiAn,
+    trieuHoiAerie,
+    iconI,
+    daVanNang,
+    sachPhep,
+    nangCapBangGia,
+    apdaoBg,
+    chuanxacBg,
+    kiendinhBg,
+    phapthuatBg,
+    camhungBg,
+    apdao,
+    chuanxac,
+    kiendinh,
+    phapthuat,
+    camhung,
+} from './image.js'
+
+import {
+    diana,
+    jhin,
+    tristana,
+    kindred,
+    missfortune,
+    ashe,
+    diana_web,
+    jhin_web,
+    tristana_web,
+    kindred_web,
+    missfortune_web,
+    ashe_web,
+    YASUO,
+    ZED,
+    KATARINA,
+    EKKO,
+    YONE,
+    FIORA,
+    SONA,
+    GAREN,
+    LUX,
+    THRESH,
+    LEESIN,
+    MASTERYI
+} from './video.js'
+
+export const intro_video = [
+    {
+        mp4:diana,
+        webm:diana_web
+    },
+    {
+        mp4:jhin,
+        webm:jhin_web
+    },{
+        mp4:tristana,
+        webm:tristana_web
+    },{
+        mp4:kindred,
+        webm:kindred_web
+    },{
+        mp4:missfortune,
+        webm:missfortune_web
+    },{
+        mp4:ashe,
+        webm:ashe_web
+    },
+]
+
+export const intro_image = [
+    bg1,
+    bg2,
+    bg3,
+    bg4,
+    bg5,
+    bg6,
+    bg7,
+]
+
+export const cartDetail = [
+    {
+        name:'Yasuo',
+        damage:'Vật lý',
+        role: dausi,
+        label:'Kẻ bất dung thứ',
+        skins: yasuo,
+        Level: [1,1,0],
+        style:'sát thương đánh thường',
+        description:"Yasuo là một kiếm sĩ nhanh nhẹn với khả năng sử dụng không khí để đánh bại kẻ thù. Khi còn là một thiếu niên kiêu hãnh, anh đã bị kết oan tội danh sát hại thầy mình,không thể chứng minh bản thân vô tội, anh đã buộc phải hạ sát chính anh trai mình để tự vệ. Khi thời gian trôi qua, dù kẻ sát nhân thực sự được hé lộ, cũng như người anh trai đã trở về từ cõi chết một cách bí ẩn, nhưng Yasuo vẫn không thôi tha thứ cho bản thân vì những gì mình đã làm. Giờ đây, anh lang bạt khắp thế giới, chỉ với ngọn gió dẫn đường cho lưỡi kiếm của mình.",    
+        intro:YASUO,
+        video:'sot5R1UUtQI',
+    },
+    {
+        name:'Zed',
+        damage:'Vật lý',
+        role: satthu,
+        label:'Chúa tể bóng tối',
+        skins: zed,
+        Level: [1,1,1],
+        style:'sát thương đánh thường và kỹ năng',
+        description:"Cực kỳ tàn nhẫn và không chút xót thương, Zed là thủ lĩnh Hội Bóng Tối, một tổ chức do hắn tạo ra với ý đồ quân sự hóa võ thuật và ma thuật truyền thống ở Ionia để đánh đuổi quân xâm lược Noxus. Trong cơn tuyệt vọng giữa cuộc chiến, hắn khai mở thể bóng tối bí mật—thứ ma thuật tà ác mạnh mẽ nhưng không kém phần nguy hiểm và dễ tha hóa. Zed luyện hết các cấm thuật này để tiêu diệt bất kỳ thứ gì hắn coi là hiểm họa cho quốc gia hay hội kín hắn lập ra.",    
+        intro:ZED,
+        video:'8tWycF1I81M',
+    },  
+    {
+        name:'Katarina',
+        damage:'Phép',
+        role: satthu,
+        label:'Ác kiếm',
+        skins: katarina,
+        Level: [1,1,0],
+        style:'sát thương kỹ năng',
+        description:"Quyết đoán khi phân xử và đáng sợ trên chiến trường, Katarina là một sát thủ Noxus ở đẳng cấp cao nhất. Con gái cả của Đại tướng Du Couteau huyền thoại, cô nổi tiếng với những pha hạ sát máu lẹ lúc kẻ địch không ngờ tới nhất. Tham vọng mãnh liệt đã thôi thúc cô nhắm tới những mục tiêu được canh gác cẩn mật hơn, dù có nguy cơ làm đồng đội gặp nguy hiểm—nhưng dù nhiệm vụ có ra sao, Katarina cũng sẽ không ngần ngại thi hành nó với một cơn lốc xoáy phi dao.",    
+        intro:KATARINA,
+        video:'sMMFGaVq66c',
+    },  
+    {
+        name:'Ekko',
+        damage:'Phép',
+        role: satthu,
+        label:'Cậu bé đảo lộn thời gian',
+        skins: ekko,
+        Level: [1,1,0],
+        style:'sát thương kỹ năng',
+        description:"Thần đồng đến từ những khu phố nhọc nhằn của Zaun, Ekko thao túng thời gian để chuyển mọi tình huống theo hướng có lợi cho cậu. Sử dụng chính phát minh của mình, Động Cơ Z, cậu khai phá mọi khả năng thực tế khả dĩ để tạo ra khoảnh khắc hoàn hảo. Dù thích tự do, nhưng mỗi khi bạn bè bị đe dọa, cậu sẽ làm mọi việc để bảo vệ họ. Với người ngoài, Ekko dường như lúc nào cũng đạt được điều không thể, ngay từ lần đầu thử sức.",    
+        intro:EKKO,
+        video:'54XKct3IOhQ',
+    },  
+    {
+        name:'Lux',
+        damage:'Phép',
+        role: phapsu,
+        label:'Tiểu thư ánh sáng',
+        skins: lux,
+        Level: [1,0,0],
+        style:'sát thương kỹ năng',
+        description:"Luxanna Crownguard sinh ra ở Demacia, nơi ma thuật bị e dè và nghi kỵ. Sở hữu khả năng điều khiển ánh sáng, cô lớn lên trong nỗi sợ bị phát hiện và lưu đày, và buộc phải giữ bí mật sức mạnh của mình để bảo toàn danh tiếng cho gia tộc. Dẫu vậy, sự lạc quan và kiên cường của Lux dần giúp cô đón nhận tài năng độc nhất vô nhị này, và giờ cô đang tìm cách biến quê hương mình thành một nơi nhiều khoan dung và thấu hiểu hơn.",    
+        intro:LUX,
+        video:'bcwUgPkVJvU',
+    },  
+    {
+        name:'Thresh',
+        damage:'Phép',
+        role: hotro,
+        label:'Cai ngục xiềng xích',
+        skins: thresh,
+        Level: [1,1,1],
+        style:'sát thương đánh thường',
+        description:"Tàn độc và xảo trá, Thresh là một linh hồn tà ác mạnh mẽ và đầy tham vọng nơi Quần Đảo Bóng Đêm. Từng là người nắm giữ vô số bí mật về cổ thuật, hắn ta đã được tái tạo bởi một nguồn sức mạnh vượt trên cả sự sống lẫn cái chết, và giờ hắn tự duy trì bản thân bằng cách tra tấn và phá hủy kẻ khác bằng thứ ác tâm chậm rãi và đau đớn. Những nạn nhân của hắn sẽ phải chịu sự đọa đày khủng khiếp hơn rất nhiều so với nơi trần thế, khi Thresh gieo rắc nỗi thống khổ lên chính linh hồn họ, giam cầm họ trong chiếc lồng đèn quỷ quái của mình, tra tấn họ đời đời kiếp kiếp.",    
+        intro:THRESH,
+        video:'aalb4Js2Bmw',
+    }, 
+    {
+        name:'leesin',
+        damage:'vật lý',
+        role: dausi,
+        label:'thầy tu mù',
+        skins: leesin,
+        Level: [1,1,1],
+        style:'sát thương đánh thường và kỹ năng',
+        description:"Bậc thầy võ thuật cổ truyền Ionia, Lee Sin, là một chiến binh sử dụng tinh hoa của loài rồng để đối mặt với bất kỳ thử thách nào. Dù bị mất đi thị giác nhiều năm trước, vị thầy tu này vẫn dành cả đời bảo vệ quê hương chống lại bất kỳ ai dám phá vỡ sự cân bằng thiêng liêng của nó. Kẻ địch đánh giá thấp phong thái thiền định của anh sẽ sớm phải chịu những cú đấm bỏng cháy và những cú đá xoáy rực lửa.",    
+        intro:LEESIN,
+        video:'hHcxauhgyuQ',
+    }, {
+        name:'Master Yi',
+        damage:'vật lý',
+        role: satthu,
+        label:'kiếm sư wuju',
+        skins: masterYi,
+        Level: [1,0,0],
+        style:'sát thương đánh thường',
+        description:"Master Yi đã rèn luyện thân thể và mài dũa tâm trí để suy nghĩ và hành động gần như hòa làm một. Dù chỉ coi bạo lực là giải pháp cuối cùng, nhưng lưỡi kiếm thanh nhã và chớp nhoáng của anh đảm bảo mọi thứ luôn được giải quyết nhanh gọn. Là một trong những môn đồ cuối cùng của võ phái Wuju, Yi dành cả đời tiếp nối di sản đó—dùng Thất Kính Thấu Thị kiểm tra những đệ tử tiềm năng để xác định ra người xứng đáng nhất.",    
+        intro:MASTERYI,
+        video:'-HAmybjEh24',
+    }, {
+        name:'Fiora',
+        damage:'vật lý',
+        role: dausi,
+        label:'NỮ KIẾM SƯ',
+        skins: fiora,
+        Level: [1,1,1],
+        style:'sát thương đánh thường và kỹ năng',
+        description:"Là đấu sĩ đáng gờm nhất trên khắp Valoran, Fiora nổi tiếng với thái độ bộc trực đến cộc cằn và đầu óc sắc sảo trên chính trường cũng như tốc độ của cô khi cầm trong tay mũi kiếm của mình. Được sinh ra trong gia đình Laurent quyền quý ở Demacia, Fiora giành lấy quyền lãnh đạo gia tộc từ tay cha cô sau một vụ tai tiếng suýt nữa đã đánh gục họ—và giờ thì cô quyết tâm sẽ khôi phục vị thế xứng đáng của Nhà Laurent trong hàng ngũ danh gia vọng tộc vương quốc.",    
+        intro:FIORA,
+        video:'ZDCrhVPGoZs',
+    }, {
+        name:'Yone',
+        damage:'vật lí',
+        role: satthu,
+        label:'kẻ về từ cõi chết',
+        skins: yone,
+        Level: [1,1,1],
+        style:'sát thương đánh thường',
+        description:"Trong cuộc đời trước kia, anh từng là Yone—người anh trai của Yasuo, và môn đồ nổi tiếng của trường kiếm trong làng. Nhưng sau khi bị hạ sát bởi chính tay người em trai mình, anh đã bị săn đuổi bởi một thực thể tà ác nơi linh giới, và buộc phải hạ gục nó bằng chính lưỡi kiếm của nó. Giờ đây, bị nguyền rủa bởi chiếc mặt nạ gắn chặt lên khuôn mặt mình, Yone không ngừng săn đuổi lũ quỷ dữ nhằm tìm kiếm lời giải cho thứ mà anh đã trở thành.",    
+        intro:YONE,
+        video:'6XnsX1ZX77E',
+    }, {
+        name:'Sona',
+        damage:'Phép',
+        role: hotro,
+        label:'Đại cầm nữ',
+        skins: sona,
+        Level: [1,1,0],
+        style:'sát thương kỹ năng',
+        description:"Sona là một nghệ sĩ bậc thầy với ngón đàn etwahl, và chỉ có thể cất giọng nói qua những giai điệu du dương tao nhã. Phong thái này giúp cô được nhiều quý tộc Demacia bảo trợ, dù có kẻ nghi ngờ âm nhạc của cô là ma thuật—điều cấm kỵ tại Demacia. Im lặng với người ngoài nhưng phần nào được những bạn đồng hành thân thiết thấu hiểu, Sona tấu lên khúc nhạc của mình không chỉ để xoa dịu các đồng minh bị thương, mà còn để bất ngờ hạ gục kẻ địch.",    
+        intro:SONA,
+        video:'vMM91dR5BNk',
+    }, {
+        name:'Garen',
+        damage:'vật lý',
+        role: dausi,
+        label:'SỨC MẠNH CỦA DEMACIA',
+        skins: garen,
+        Level: [1,0,0],
+        style:'sát thương đánh thường và kỹ năng',
+        description:"Garen, một chiến binh đầy kiêu hãnh và cao quý, là thủ lĩnh của Đội Tiên Phong Bất Khuất. Anh được đồng đội yêu mến, còn kẻ thù thì kính trọng—nhất là khi anh thuộc dòng dõi Crownguard, những người được giao phó cho sứ mạng bảo vệ vương quốc và lý tưởng Demacia. Khoác bộ giáp kháng ma thuật, cầm trên tay thanh cự kiếm đầy uy nghiêm, Garen đứng sừng sững đối mặt với bất kỳ pháp sư hay phù thủy nào trên chiến trường, bằng một cơn lốc sắt thép thực thụ.",    
+        intro:GAREN,
+        video:'Z-Y25fizv5U',
+    }, 
+]
+
+
+export const ngoc = [
+    {
+        name: "Chuẩn xác",
+        label:iconP,
+        imgBg: chuanxacBg,
+        img: chuanxac,
+        title: {
+            h4: "TRỞ THÀNH HUYỀN THOẠI",
+            p:"Tăng đòn đánh và sát thương lâu dài",
+            span:"Sử dụng cho: AD (xạ thủ), sát thủ, đấu sĩ"
+        },
+        group:[
+            {
+                name:"Sẵn sàng tấn công",
+                img: sanSangTanCong,
+                desc:"Tấn công một tướng 3 lần liên tiếp sẽ làm kẻ đó suy yếu, gây thêm sát thương và khiến kẻ đó chịu thêm sát thương từ mọi nguồn trong 6 giây.",
+            },
+            {
+                name:"Bước chân thần tốc",
+                img: buocChanThanToc,
+                desc:"Tấn công và di chuyển tăng cộng dồn Tích Điện. Ở 100 điểm, đòn đánh kế tiếp hồi máu cho bạn và tăng thêm tốc độ di chuyển.",
+            },            {
+                name:"Nhịp độ chết người",
+                img: nhipDoChetNguoi,
+                desc:"1.5 giây sau khi sát thương tướng địch, nhận thêm rất nhiều tốc độ đánh. Nhịp độ chết người cho phép bạn tạm thời vượt qua tốc độ đánh.",
+            },
+        ],
+    },
+    {
+        name: "Áp đảo",
+        label:iconD,
+        imgBg: apdaoBg,
+        img:apdao,
+        title: {
+            h4: "SĂN LÙNG VÀ LOẠI BỎ CON MỒI",
+            p:"Dồn sát thương tiếp cận mục tiêu",
+            span:"Sử dụng cho: Sát thủ, đi Rừng, đường giữa Mid sốc damge sát thương mạnh"
+        },
+        group:[
+            {
+                name:"Sốc điện",
+                img: socDien,
+                desc:"3 kỹ năng hoặc đòn đánh riêng biệt trúng một tướng trong vòng 3 giây gây thêm sát thương thích ứng.",
+            },
+            {
+                name:"Thú săn mồi",
+                img: thuSanMoi,
+                desc:"Thêm hiệu ứng kích hoạt cho giày giúp tăng mạnh Tốc độ Di chuyển và đòn đánh hoặc phép kế tiếp kế tiếp của bạn gây thêm sát thương thích ứng.",
+            },            {
+                name:"Thu thập hắc ám",
+                img: thuThapHacAm,
+                desc:"Tướng, quái to, và lính to để lại linh hồn khi chết. Thu thập linh hồn để hấp thụ chúng và gây sát thương thích ứng ở đòn đánh kế tiếp dựa trên tổng linh hồn thu thập được.",
+            },
+        ],
+    },
+    {
+        name: "Pháp Thuật",
+        label:iconS,
+        imgBg: phapthuatBg,
+        img:phapthuat,
+        title: {
+            h4: "HỦY DIỆT VÀ TÀN PHÁ",
+            p:"Cường hóa kỹ năng và kiểm soát năng lượng.",
+            span:"Sử dụng cho:  Mid, Pháp Sư cấu rỉa máu, Sp hỗ trợ, Đấu sỹ"
+        },
+        group:[
+            {
+                name:"Triệu hồi Aerie",
+                img: trieuHoiAerie,
+                desc:"Đòn đánh và kỹ năng đưa Aerie đến chỗ mục tiêu, gây sát thương kẻ địch hoặc che chắn cho đồng minh.",
+            },
+            {
+                name:"Thiên thạch bí ẩn",
+                img: thienThachBiAn,
+                desc:"Kỹ năng gây sát thương lên một tướng thả một thiên thạch vào vị trí kẻ đó, hoặc giảm hồi chiêu còn lại của Thiên Thạch Bí Ẩn nếu nó đang hồi chiêu.",
+            },            {
+                name:"Tăng tốc pha",
+                img: tangTocPha,
+                desc:"Đánh trúng một tướng địch với 3 đòn đánh hoặc kỹ năng riêng biệt tăng mạnh Tốc độ Di chuyển.",
+            },
+        ],
+    },
+    {
+        name: "Kiên Định",
+        label:iconR,
+        imgBg: kiendinhBg,
+        img:kiendinh,
+        title: {
+            h4: "SỐNG LÂU TRĂM TUỔI",
+            p:"Chống chịu và khống chế",
+            span:"Sử dụng cho: Top tank, Sp tank, tướng đỡ đòn"
+        },
+        group:[
+            {
+                name:"Quyền năng bất duyệt",
+                img: quyenNangBatDiet,
+                desc:"Mỗi 4 giây đòn đánh kế tiếp của bạn lên một tướng gây thêm sát thương phép, hồi máu cho bạn, và tăng vĩnh viễn Máu.",
+            },
+            {
+                name:"Dư chấn",
+                img: duChan,
+                desc:"Sau khi bất động amột tướng địch, nhận thêm chống chịu rồi một lát sau gây sát thương thích ứng ra xung quanh.",
+            },            {
+                name:"Hộ vệ",
+                img: hoVe,
+                desc:"Hộ vệ đồng minh bạn dùng kỹ năng lên và những ai ở rất gần đó. Nếu bạn hoặc một đồng minh được hộ vệ chịu sát thương, cả hai được tăng tốc và có lá chắn.",
+            },
+        ],
+    },
+    {
+        name: "Cảm hứng",
+        label:iconI,
+        imgBg: camhungBg,
+        img:camhung,
+        title: {
+            h4: "VƯỢT QUA NGOÀI RANH GIỚI TRẦN TỤC",
+            p:"Các công cụ sáng tạo và bẻ cong luật lệ",
+            span:"Sử dụng cho: Top, Mid và một số tướng hỗ trợ"
+        },
+        group:[
+            {
+                name:"Sách phép",
+                img: sachPhep,
+                desc:"Kiếm Mảnh Bổ Trợ và đổi chúng trong cửa hàng để thay Phép Bổ Trợ. Phép Bổ Trợ được giảm hồi chiêu.",
+            },
+            {
+                name:"Năng cấp băng giá",
+                img: nangCapBangGia,
+                desc:"Đòn đánh đầu tiên của bạn lên một tướng địch làm chậm kẻ đó (hồi chiêu theo mỗi đơn vị). Làm chậm tướng địch bằng trang bị kích hoạt bắn một tia đông lạnh vào kẻ đó, tạo ra một vùng làm chậm",
+            },            {
+                name:"Đá vạn năng",
+                img: daVanNang,
+                desc:"Sau mỗi 3 phút nhận được ngẫu nhiên một loại ngọc tái tổ hợp huyền thoại.",
+            },
+        ],
+    },
+]

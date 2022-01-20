@@ -1,0 +1,48 @@
+@use "../../scss/" as *;
+
+.review {
+    position: relative;
+    height: 98vh;
+    @include flex(center, center);
+    background-image:url("../../assets/lol_assets/Review.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000000ba;
+    }
+
+    &__container {
+        margin: auto;
+        width: 80%;
+        color: $white;
+        z-index: 10;
+        &__content {
+            h1{
+                text-align: center;
+                font-size:6rem;
+                white-space: nowrap;
+                @include mobile() {
+                    white-space: inherit;
+                    font-size:3rem;
+                }
+                @include tablet() {
+                    font-size:5rem;
+                }
+            }
+
+            p {
+                max-width: 715px;
+                margin: 20px auto 0px;
+                text-align: center;
+                font-size: 1.4rem;
+                letter-spacing: 0.08em;
+                line-height: 1.6;
+            }
+        }
+    }
+}

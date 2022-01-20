@@ -1,0 +1,24 @@
+@use '../../../scss/' as *;
+
+.video {
+    width: 100%;
+}
+
+.end {
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        padding: 20px 40px;
+        font-weight: bolder;
+        border: none;
+        font-size: 2rem;
+        @include mobile() {
+            font-size: 1rem;
+            top: 45%;
+            left:30%;
+        }
+    }
+}

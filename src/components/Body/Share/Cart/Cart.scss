@@ -1,0 +1,101 @@
+@use "../../../../scss/" as *;
+
+.cart {
+    transition: all 0.2s ease;
+    @include flex(center, center);
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    $width: 300px;
+    width: $width;
+    height: calc($width + 50px) ;
+    background-size: cover;
+    background-position: -235px 0;
+    background-repeat: no-repeat;
+    @include mobile() {
+        width: 100%!important;
+        background-position: -175px 0;
+    }
+    @include tablet() {
+        width: 100%;
+        background-position: -112px 0;
+    }
+    &__container {
+        width: 100%;
+        height: 260px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        video {
+            transform: scale(1.1) translateX(8%)
+        }
+    }
+
+    &__info {
+        background-color: #101217;
+        text-align: center;
+        color:$txt-color;
+        width:101%;
+        border: 1px solid #32281f;
+        margin-bottom: -1px;
+        padding: 10px 5px;
+        border-top: 1px solid #7e633b;
+        h3 {
+            margin: 6px 0;
+            font-weight: 700;
+            font-size: 12px;
+            color: #937341!important;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-weight: 500;
+            margin: 6px 0;
+            font-size: 14px;
+            color: #c4b998;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &.discover {
+            margin-bottom: -63px;
+            transition: all 0.4s ease;
+            padding: 10px 0;
+            border-top: 1px solid #7e633b; 
+        }
+    }
+}
+
+.cart:hover {
+    // overflow: visible;
+    z-index: 99;
+    transform: scale(1.2);
+    // video {
+    //     transform: scale(1.1);
+    // }
+    .img {
+        opacity: 1;
+    }
+    .cart__info {
+        &.discover {
+            margin-bottom: 0;
+        }
+    }
+} 
+  
+.bg {
+    width: 175% !important;
+    left: -50%;
+}
+  
+.img {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+  

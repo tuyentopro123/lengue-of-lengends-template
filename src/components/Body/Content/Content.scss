@@ -1,0 +1,21 @@
+@use "../../../scss/" as *;
+
+.content {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#161c20), to(#050c17));
+    background-image: linear-gradient(to top, #161c20 0%, #050c17 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: $content-hg;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover ;
+        background-image: url(../../../assets/lol_assets/bg/bg.png);
+        opacity: 0.75;
+        z-index: 1;
+    }
+}
